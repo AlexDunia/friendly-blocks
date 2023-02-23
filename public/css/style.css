@@ -107,7 +107,7 @@ li{
     border-radius: 8px;
     align-items: center;
     padding: 15px 40px;
-    gap: 10px;
+    /* gap: 10px; */
     font-Weight: 700;
     font-size: 17px;
     Line-height: 32px;
@@ -115,4 +115,78 @@ li{
     color: #081B28;
     border: none;
     margin-top:25px;
+}
+
+.everyoneflex{
+    display:flex;
+    margin:auto;
+    width:83%;
+    margin-top:50px;
+}
+
+.heroflex{
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+    width:83%;
+    margin-top:30px;
+}
+
+.heromaintext h2{
+    margin-top:50px;
+    font-size:65px;
+    font-weight:650;
+    line-height:1.2em;
+    color:#282828;
+}
+
+.heromaintext p{
+    margin-top:15px;
+    font-size:21px;
+    font-weight:300;
+    line-height:1.5em;
+    color:#282828;
+}
+
+.everyoneimg img{
+    margin-right:60px;
+}
+
+.everyonemaintext h2{
+    margin-top:50px;
+    font-size:45px;
+    font-weight:600;
+    line-height:1.2em;
+    color:#282828;
+}
+
+.everyonemaintext p{
+    margin-top:15px;
+    font-size:18px;
+    font-weight:300;
+    line-height:1.8em;
+    color:#282828;
+}
+
+/* Our approach */
+
+.mainappflex{
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+    width:83%;
+    margin-top:30px;
+}
+
+.appbg{
+    background:#081B28;
+    color:white;
+}
+
+.mainapp{
+    flex-basis:50%;
+}
+
+.mainapp h1{
+    color:#BA9318;
 }
