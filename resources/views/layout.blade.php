@@ -29,7 +29,6 @@
             referrerpolicy="no-referrer"
         />
         <script src="https://cdn.tailwindcss.com"></script> --}}
-   
     
         <title> Friendly blocks </title>
     </head>

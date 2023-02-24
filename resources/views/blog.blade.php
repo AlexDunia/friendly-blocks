@@ -60,13 +60,53 @@
     <div class="pgrid">
 
       <div class="allproducts">
-        <img src="\images\eth.jpg"class="blogimage"  width="300px"/>
-        <h3> Grids div </h3> 
+        <img src="\images\pkey.png" class="blogimage" width="300px"/>
+
+        <div class="userflex"> 
+
+        <div class="userimgdiv">
+          <img src="/images/dunia.png" class="userimg">
+        </div>
+
+      
+
+        <div class="userimgdiv">
+          <h4> Alex Dunia </h4>
+        </div>
+
+      </div> 
+
+
+        <h3>  Why crypto currency matters and how to avoide bad actors in this revolutionary space </h3> 
       </div>
 
+
+
+
+
+
+
+
+
       <div class="allproducts">
-        <img src="\images\pkey.png" class="blogimage" width="300px"/>
-        <h3> Grids div </h3> 
+        <img src="\images\eth.jpg" class="blogimage" width="300px"/>
+
+        <div class="userflex"> 
+
+        <div class="userimgdiv">
+          <img src="/images/dunia.png" class="userimg">
+        </div>
+
+      
+
+        <div class="userimgdiv">
+          <h4> Alex Dunia </h4>
+        </div>
+
+      </div> 
+
+
+        <h3> Differebnce between public keys </h3> 
       </div>
 
 
@@ -91,7 +131,7 @@
       </div> 
 
 
-        <h3> Difference between public keys and private keys </h3> 
+        <h3> Differebnce between public keys </h3> 
       </div>
 
     </div>
