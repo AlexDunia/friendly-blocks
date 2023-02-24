@@ -100,26 +100,63 @@ li{
 
   .pgrid{
     display: grid;
-    gap: 50px;
-    grid-template-columns: repeat(auto-fit,minmax(300px,3fr));
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(370px,3fr));
     text-align: center;
     padding: 4em;
+   
     margin-bottom: 40px;
-    clip: rect(0px,60px,200px,0px);
   }
 
-  .pgrid img {
+  .blogimage {
     min-width: 100%;
     max-height: 100%;
 }
 
-  /* .pgrid img{
-    clip: rect(0px,60px,200px,0px);
-  } */
-
   .allproducts{
-    background: #f3f1ec;
+    background: #D9D9D9;
   }
+
+  .userimg {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.userimgdiv{
+    margin-top:10px;
+}
+
+.userimgdiv h4{
+   font-size:14px;
+   font-weight:400;
+}
+
+
+.userflex{
+    text-align: center;
+    justify-content: space-around;
+    width: 35%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+}
+
+.allproducts h3{
+   padding-top:14px;
+   padding-bottom:27px;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 176%;
+padding-right:30px;
+padding-left:30px;
+/* or 46px */
+
+text-align: center;
+}
 
   /* .myimg img {
     position: absolute;
