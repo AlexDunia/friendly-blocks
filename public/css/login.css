@@ -1,0 +1,75 @@
+.formbg{
+    background:#EEEDED;
+    background: #eff2fc;
+    width: 75%;
+    padding-top: 13px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 10px 10px 10px rgba(105, 104, 104, 0.1);
+}
+
+.formbg h2{
+    align-items: center;
+    text-align: center;
+    color:#BA9318;
+    font-size:27px;
+    padding-top:50px;
+    padding-bottom:30px;
+}
+
+.formbg p{
+    align-items: center;
+    text-align: center;
+    width:60%;
+    margin:auto;
+    line-height:1.7em;
+    font-style: normal;
+    font-weight: 300;
+    padding-bottom:15px;
+    font-size: 18px;
+}
+
+.forminner button{
+    background: #081B28;;
+    color: #fff;
+    border: 0;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 106%;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    box-shadow: 10px 10px 30px rgba(105, 104, 104, 0.1);
+}
+
+.fstyle{
+    display: grid;
+    width: 80%;
+    margin: auto;
+}
+
+.forminner label{
+    font-size:19px;
+    font-weight:200;
+}
+
+.formbgmain{
+    margin-bottom:170px;
+}
+
+.formbg input{
+    background: #FFFFFF;
+    box-shadow: 10px 10px 30px rgba(105, 104, 104, 0.1);
+    border:none;
+width:100%;
+padding:23px;
+}
+
+.formbg input::placeholder{
+    font-size:17px;
+    color:#cecaca;
+}

@@ -24,3 +24,8 @@ Route::get('/user/profile', function () {
 Route::get('/user/register', function () {
     return view('register');
 });
+
+Route::get('/user/login', function () {
+    return view('login');
+});
+
