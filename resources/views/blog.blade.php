@@ -56,7 +56,31 @@
 
     </div> 
 
-    </body>
+    {{-- blogs grid --}}
+    <div class="pgrid">
+
+      <div class="allproducts">
+        <img src="\images\eth.jpg" width="300px"/>
+        <h3> Grids div </h3> 
+      </div>
+
+      <div class="allproducts">
+        <img src="\images\pkey.png" width="300px"/>
+        <h3> Grids div </h3> 
+      </div>
+
+      <div class="allproducts">
+        <img src="\images\help.jpg" width="300px"/>
+        <h3> Grids div </h3> 
+      </div>
+
+    </div>
+
+    <div class="myimg"> 
+      <img src="\images\screen.png" width="300px"/>
+      <img src="\images\eth.jpg" />
+    </div>
+     
 
     @endsection
     
