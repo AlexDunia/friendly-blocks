@@ -171,11 +171,14 @@ li{
 /* Our approach */
 
 .mainappflex{
+    padding-top:100px;
+    padding-bottom:100px;
     display:flex;
     justify-content:space-between;
     margin:auto;
+    align-items:center;
     width:83%;
-    margin-top:30px;
+    margin-top:80px;
 }
 
 .appbg{
@@ -184,9 +187,21 @@ li{
 }
 
 .mainapp{
-    flex-basis:50%;
+    flex-basis:51%;
 }
 
 .mainapp h1{
     color:#BA9318;
+    font-size:42px;
+}
+
+.mainapp p{
+    font-weight:200;
+    line-height:1.9em;
+    font-size:18px;
+    margin-top:10px;
+}
+
+.mainappimg img{
+    margin-top:50px;
 }

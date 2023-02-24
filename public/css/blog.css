@@ -1,0 +1,121 @@
+body{
+    font-family: 'Inter', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+}
+
+li{
+    display: inline;
+    list-style: none;
+}
+
+.purplelayer{
+    position:relative;
+}
+
+.purple{
+    /* margin-top:200px; */
+    padding-top:85px;
+    padding-bottom:140px;
+    width:85%;
+    margin: auto;
+    margin-top:60px;
+    /* position:absolute;
+    top:50px; */
+    background:#081B28;
+    color:white;
+    /* left: 0;
+    right: 0;
+    margin: 0 auto; */
+}
+
+.purple h1{
+    padding-left:80px;
+    font-weight:400;
+    font-size:40px;
+}
+
+.purple p{
+    padding-left:80px;
+    margin-top:13px;
+    font-size:18px;
+    font-weight:100;
+}
+
+.purplespan{
+    color:#BA9318;
+    font-weight:700;
+}
+
+/* Search here */
+
+
+  .no-outline:focus {
+    outline: none;
+  }
+
+
+  .shh{
+    margin : 0 auto; 
+    display:block;
+    width:85%;
+    margin-bottom:80px;
+  }
+
+  .shh button{
+    background:#F2F4F4;
+    border:none;
+    color:#c9b5b6;
+    width:7%;
+    padding-right:10px;
+    padding-left:15px;
+    border-radius: 15px 0px 0px 15px;
+    padding-top:24px;
+    padding-bottom:24px;
+    font-size:19px;
+   
+  }
+
+  .shh input{
+    background:#F2F4F4;
+    border:none;
+    width:93.5%;
+    margin-left:-15px;
+    color:white;
+    border-radius: 0px 15px 15px 0px;
+    padding-top:26px;
+    padding-bottom:26px;
+    font-size:16px;
+  }
+
+  .shh input::placeholder{
+    color:#b4a1a4;
+  }
+
+/* .shdiv{
+    display: block;
+    margin : 0 auto;
+} */
+
+/* .shtext i{
+    color:#c9b5b6;
+}
+
+.shtext h3{
+    color:#b4a1a4;
+    font-weight:400;
+    font-size:26px;
+    margin-left:40px;
+}
+
+.search{
+    margin-left:30px;
+    font-size:19px;
+} */
+
