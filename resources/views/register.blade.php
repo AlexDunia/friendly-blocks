@@ -27,22 +27,25 @@
         <p> Are you passionate about blockchain technology or want to know more about it in the simplest way there is on the world wide web?
             if yes, then you should sign in </p>
 
-            <form method="POST" action="/users/authenticate" class="fstyle">
+            {{-- <form method="POST" action="/users/authenticate" class="fstyle"> --}}
+                <form method="POST" class="fstyle" action="/user">
 
                 {{ csrf_field() }}
 
                 <div class="forminner">
+
                     <br/>
                     <br/>
-                    <label for="email" 
+                    <label for="firstname" 
                         > First Name </label
                     >
+
                     <br/>
                     <br/>
                     <input
-                        type="email"
-                        name="email"
-                        value="{{old('email')}}"
+                        type="text"
+                        name="firstname"
+                        value="{{old('firstname')}}"
                     />
                    
                    
@@ -52,14 +55,14 @@
                     <br/>
                     <br/>
                     <label
-                        for="password"
+                        for="lastname"
                     >
                         Last Name
                     </label>
                     <br/>
                     <br/>
                     <input
-                        type="password"
+                        type="text"
                         name="lastname"
                         value="{{old('lastname')}}"
                     />
@@ -79,8 +82,8 @@
                     <br/>
                     <input
                         type="email"
-                        name="lastname"
-                        value="{{old('lastname')}}"
+                        name="email"
+                        value="{{old('email')}}"
                     />
                    
                 </div>
@@ -105,7 +108,7 @@
                 </div>
 
 
-                <div class="forminner">
+                {{-- <div class="forminner">
                     <br/>
                     <br/>
                     <label
@@ -121,7 +124,7 @@
                         value="{{old('password')}}"
                     />
                    
-                </div>
+                </div> --}}
 
                 <br/>
                 <br/>
