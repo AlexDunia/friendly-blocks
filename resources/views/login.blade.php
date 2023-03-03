@@ -21,25 +21,31 @@
 <div class="formbgmain"> 
 
     <div class="formbg"> 
+        @foreach($errors->all() as $error)
+   {{ $error  }}
+@endforeach
 
         <h2> Login </h2> 
 
-        <p> Log in to stay updated with our articles </p>
+        <p> Log in to stay updated with ouer articles </p>
 
-            <form method="POST" action="/users/authenticate" class="fstyle">
+            <form method="post" class="fstyle" action="/authenticate">
 
-                {{ csrf_field() }}
+                @csrf
         
-
                 <div class="forminner">
 
                     <br/>
                     <br/>
+                    <div >
+                        <label for="email" 
+                            > Email </label
+                        >
                     <input
                         type="email"
-                        name="lastname"
-                        placeholder="Email"
-                        value="{{old('lastname')}}"
+                        name="email"
+                        placeholder="email"
+                        value="{{old('email')}}"
                     />
                    
                 </div>
@@ -49,10 +55,14 @@
 
                     <br/>
                     <br/>
+                    <div >
+                        <label for="password" 
+                            > password </label
+                        >
                     <input
                         type="password"
                         name="password"
-                        placeholder="Password"
+                        placeholder="password"
                         value="{{old('password')}}"
                     />
                    

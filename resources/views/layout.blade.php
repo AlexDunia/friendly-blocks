@@ -52,21 +52,28 @@
          </div> 
 
 
-         <div class="navdivregister"> 
+         {{-- <div class="navdivregister"> 
             <ul> 
                 <a href="">  <li> Login </li>  </a> 
                 <a href="">  <li> Sign up </li>  </a> 
-            </ul> 
+            </ul>  --}}
+
+            <form method="POST" action="/logout" enctype="multipart/form-data">
+
+                @csrf
+                <div class="navdivregister">
+                <button class="logout"> 
+                    Logout
+                </button>
+                <img src="\images\dunia.png" class="userimg"> 
+                
+            </form>
          </div> 
 
         </div>
 
     </div>
 
-  
-
-
-
-        @yield('mycontent')
+    @yield('mycontent')
     </body>
 </html>

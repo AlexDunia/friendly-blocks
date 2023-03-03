@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
+
 class RegisterController extends Controller
 {
     //
@@ -18,7 +19,6 @@ class RegisterController extends Controller
     }
 
     public function store(Request $request){
-        // return view('register');
         // dd($request->all());
         $Myuser = $request->validate([
             'firstname' => 'required',
@@ -29,8 +29,55 @@ class RegisterController extends Controller
         $Myuser['password'] = bcrypt($Myuser['password']);
         $oneuser = User::create($Myuser);
         Auth()->login($oneuser);
-        // Auth()->login($oneuser);
-
+     
         return redirect('/');
     }
+
+    public function login(){
+        return view('login');
+    }
+    
+    // Store user login
+//     public function storelogin(Request $request){
+//         // dd($request->all());
+//         $Myuser = $request->validate([
+//             'email'=>['required', 'email'],
+//             'password' => 'required'
+//         ]);
+       
+//         if(auth()->attempt($Myuser)){
+//             // If there is an authentication attempt on my user, then we want to regenerate session
+//             // In actual codes, it will be the other way round. 
+//             $request->session()->regenerate();
+//             return redirect('/');
+//         }
+     
+//         return back();
+//     }
+// }
+
+public function logout(Request $request){
+    auth()->logout();
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
+    return redirect('/');
+}
+
+
+public function authenticate(Request $request){
+   
+    $Myuser = $request->validate([
+        'email'=>['required', 'email'],
+        'password'=> 'required'
+    ]);
+
+    if(auth()->attempt($Myuser)){
+        $request->session()->regenerate();
+         return redirect('/');
+    }
+
+     return back();
+    
+}
+
 }
