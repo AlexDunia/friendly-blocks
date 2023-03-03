@@ -34,7 +34,8 @@ Route::get('/user/register', [RegisterController::class, 'create']);
 // Store user registered information to the database.
 Route::post('/user', [RegisterController::class, 'store']);
 
-
+// User profile 
+Route::get('/profile', [RegisterController::class, 'profile']);
 
 // Enabe user login. 
 Route::get('/user/login', [RegisterController::class, 'login']);

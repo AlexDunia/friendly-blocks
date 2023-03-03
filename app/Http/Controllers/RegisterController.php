@@ -14,6 +14,10 @@ class RegisterController extends Controller
         return view('welcome');
     }
 
+    public function profile(){
+        return view('profile');
+    }
+
     public function create(){
         return view('register');
     }
