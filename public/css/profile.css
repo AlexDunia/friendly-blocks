@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.loginuserphoto {
+   margin-top:50px;
+}
+
+.loginuserphoto h1{
+   align-items:center;
+   text-align:center;
+   color:#BA9318;
+   margin-top:20px;
+}
+
+.loginuserphotoimage{
+    width: 150px;
+    height: 150px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* links */
+
+.reachlinks{
+    display:flex;
+    align-items:center;
+}
+
+.reachimg img{
+    width:40px;
+}
+
+.reachlinksdiv{
+    display:flex;
+    justify-content:space-between;
+    width:60%;
+    margin:auto;
+    margin-top:60px;
+}
+
+.reachtext{
+    margin-left:20px;
+}
+
+.reachtext h3{
+    color:#5A5757;
+}
