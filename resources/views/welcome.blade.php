@@ -4,6 +4,7 @@
 
 
 @auth
+  
 <head>
 
     <link
@@ -14,18 +15,20 @@
 
 </head>
 <body>
+
+  
   {{-- The @yeild is the parent component. The section is the child, so now that is what we need.  --}}
   
 
   <div class="purple"> 
 
-    <form method="POST" action="/logout" enctype="multipart/form-data">
+    {{-- <form method="POST" action="/logout" enctype="multipart/form-data">
       @csrf
       <button class="text-black-500"> 
           Logout
       </button>
       
-  </form>
+  </form> --}}
 
     <h1> Welcome, <span class="purplespan"> {{auth()->User()->firstname}} </span> </h1> 
     <p> We have updated our blog, scroll down to be  <br/>
@@ -60,8 +63,11 @@
   </div>
 
 </div> 
+<x-blogpost/>
 
-{{-- blogs grid --}}
+
+{{-- 
+blogs grid
 <div class="pgrid">
 
   <div class="allproducts">
@@ -139,7 +145,8 @@
     <h3> Differebnce between public keys </h3> 
   </div>
 
-</div>
+</div> --}}
+
 
 @else
 

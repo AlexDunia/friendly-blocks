@@ -51,4 +51,11 @@
 
 </div> 
 
+<br/> 
+<br/>
+
+<div class="division"> 
+<hr> 
+</div>
+
 @endsection

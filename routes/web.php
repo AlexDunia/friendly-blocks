@@ -26,6 +26,10 @@ Route::get('/', [RegisterController::class, 'index']);
 //     return view('blog');
 // });
 
+Route::get('/user/blog', function () {
+    return view('components\blogpost');
+});
+
 // The next code is to send a post request to log out. 
 Route::post('/logout', [RegisterController::class, 'logout']);
 

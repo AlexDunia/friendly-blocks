@@ -11,7 +11,8 @@
    align-items:center;
    text-align:center;
    color:#BA9318;
-   margin-top:20px;
+   margin-top:30px;
+   font-size:35px;
 }
 
 .loginuserphotoimage{
@@ -33,7 +34,7 @@
 }
 
 .reachimg img{
-    width:40px;
+    width:38px;
 }
 
 .reachlinksdiv{
@@ -41,7 +42,7 @@
     justify-content:space-between;
     width:60%;
     margin:auto;
-    margin-top:60px;
+    margin-top:35px;
 }
 
 .reachtext{
@@ -50,4 +51,11 @@
 
 .reachtext h3{
     color:#5A5757;
+}
+
+.division hr{
+    border-top: 4px solid #D9D9D9;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    width:85%;
+    margin:auto;
 }

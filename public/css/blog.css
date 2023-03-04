@@ -117,7 +117,7 @@ li{
     background: #D9D9D9;
   }
 
-  .userimg {
+  .userimgg {
     width: 30px;
     height: 30px;
     -o-object-fit: cover;
@@ -125,11 +125,11 @@ li{
     border-radius: 50%;
 }
 
-.userimgdiv{
+.userimgdivv{
     margin-top:10px;
 }
 
-.userimgdiv h4{
+.userimgdivv h4{
    font-size:14px;
    font-weight:400;
 }
