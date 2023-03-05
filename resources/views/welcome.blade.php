@@ -1,4 +1,3 @@
-
 @extends('layout')
 @section('mycontent')
 
@@ -63,7 +62,23 @@
   </div>
 
 </div> 
-<x-blogpost/>
+{{-- Lets first try to show it here directly --}}
+
+@unless(count($welcome) == 0)
+<x-card> 
+@foreach($welcome as $one)
+ 
+ <x-blogpost :one=$one/>
+ @endforeach
+</x-card>
+ 
+ 
+  @else
+  <h1> No blocks found </h1> 
+
+  @endunless
+
+{{-- Then we need to loop it, and we want to do that directly for now.  --}}
 
 
 {{-- 

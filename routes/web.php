@@ -1,9 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
-use App\Http\Controllers\RegisterController;
 use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogsController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,15 +21,17 @@ use App\Models\User;
 //     return view('welcome');
 // });
 
-Route::get('/', [RegisterController::class, 'index']);
+Route::get('/', [BlogsController::class, 'index']);
+// Route::get('/', [BlogsController::class, 'show']);
+// Route::get('/', [BlogsController::class, 'showone']);
 
 // Route::get('/user/profile', function () {
 //     return view('blog');
 // });
 
-Route::get('/user/blog', function () {
-    return view('components\blogpost');
-});
+// Route::get('/user/blog', function () {
+//     return view('components\blogpost');
+// });
 
 // The next code is to send a post request to log out. 
 Route::post('/logout', [RegisterController::class, 'logout']);
@@ -48,4 +51,4 @@ Route::post('/authenticate', [RegisterController::class, 'authenticate']);
 
 
 
-Route::get('/', [App\Http\Controllers\RegisterController::class, 'index'])->name('welcome');
+Route::get('/', [App\Http\Controllers\BlogsController::class, 'index'])->name('welcome');

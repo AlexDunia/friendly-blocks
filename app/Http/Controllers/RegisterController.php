@@ -10,9 +10,9 @@ use Illuminate\Validation\Rule;
 class RegisterController extends Controller
 {
     //
-    public function index(){
-        return view('welcome');
-    }
+    // public function index(){
+    //     return view('welcome');
+    // }
 
     public function profile(){
         return view('profile');

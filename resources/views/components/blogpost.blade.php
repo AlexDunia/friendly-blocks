@@ -1,3 +1,5 @@
+@props(['one'])
+
 <head>
 
     <link
@@ -10,7 +12,33 @@
 
 <body>
     {{-- blogs grid --}}
-    <div class="pgrid">
+
+
+      <div class="allproducts">
+        <img src="\images\pkey.png" class="blogimage" width="300px"/>
+    
+        <div class="userflex"> 
+    
+        <div class="userimgdiv">
+          <img src="/images/dunia.png" class="userimg">
+        </div>
+    
+    
+        <div class="userimgdiv">
+          <h4> {{$one->name}} </h4>
+        </div>
+    
+      </div> 
+    
+    
+        <h3>  {{$one->content}}</h3> 
+    
+      </div>
+
+      
+
+
+    {{-- <div class="pgrid">
 
         <div class="allproducts">
           <img src="\images\pkey.png" class="blogimage" width="300px"/>
@@ -80,6 +108,6 @@
           <h3> Difference between public keys </h3> 
         </div>
   
-      </div>
+      </div> --}}
 
 </body>
