@@ -38,6 +38,7 @@ Route::post('/logout', [RegisterController::class, 'logout']);
 
 // Register user
 Route::get('/user/register', [RegisterController::class, 'create']);
+
 // Store user registered information to the database.
 Route::post('/user', [RegisterController::class, 'store']);
 
@@ -49,6 +50,11 @@ Route::get('/user/login', [RegisterController::class, 'login']);
 // Verify and store users login
 Route::post('/authenticate', [RegisterController::class, 'authenticate']);
 
+// create post interface
+Route::get('/createpost', [BlogsController::class, 'create']);
 
+Route::get('/blogpost/{oneblog}', [BlogsController::class, 'showone']);
+
+Route::post('/publish', [BlogsController::class, 'store']);
 
 Route::get('/', [App\Http\Controllers\BlogsController::class, 'index'])->name('welcome');

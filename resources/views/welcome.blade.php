@@ -1,7 +1,6 @@
 @extends('layout')
 @section('mycontent')
 
-
 @auth
   
 <head>
@@ -68,10 +67,9 @@
 <x-card> 
 @foreach($welcome as $one)
  
- <x-blogpost :one=$one/>
+<x-blogpost :one=$one/>
  @endforeach
 </x-card>
- 
  
   @else
   <h1> No blocks found </h1> 

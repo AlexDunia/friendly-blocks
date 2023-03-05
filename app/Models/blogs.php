@@ -7,5 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class blogs extends Model
 {
-    use HasFactory;
+    // use HasFactory;
+    protected $fillable = [
+        'Title',
+        'Heading',
+        'Quoteone',
+        'Contentone',
+        'Contenttwo',
+        'Quotetwo',
+    ];
+
+    
 }

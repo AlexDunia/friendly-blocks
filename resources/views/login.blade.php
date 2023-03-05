@@ -27,7 +27,7 @@
 
         <h2> Login </h2> 
 
-        <p> Log in to stay updated with ouer articles </p>
+        <p> Log in to stay updated with our articles </p>
 
             <form method="post" class="fstyle" action="/authenticate">
 

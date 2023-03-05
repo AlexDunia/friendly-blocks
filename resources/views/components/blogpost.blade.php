@@ -15,6 +15,7 @@
 
 
       <div class="allproducts">
+
         <img src="\images\pkey.png" class="blogimage" width="300px"/>
     
         <div class="userflex"> 
@@ -25,15 +26,15 @@
     
     
         <div class="userimgdiv">
-          <h4> {{$one->name}} </h4>
+          <a href="/blogpost/{{$one->id}}"> {{$one->name}} </a>
         </div>
     
-      </div> 
+       </div> 
     
     
-        <h3>  {{$one->content}}</h3> 
+        {{-- <h3> {{$one->content}} </h3>  --}}
     
-      </div>
+       </div>
 
       
 
