@@ -29,7 +29,7 @@ class BlogsController extends Controller
     }
 
     public function store(Request $request){
-        dd($request->all());
+        // dd($request->all());
         $Blogfields = $request->validate([
           'Title' => 'required',
           'Heading' => 'required',
@@ -38,6 +38,10 @@ class BlogsController extends Controller
           'Quotetwo' => 'required',
           'Contenttwo' => 'required',
         ]);
+
+        blogs::create($Blogfields);
+        // We used this create while making use of the database seeders. 
+        return redirect('/');
         // return view('createblog');
     }
 
