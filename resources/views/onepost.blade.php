@@ -17,15 +17,19 @@
     <div class="titlediv"> 
 
     <div> 
-        <h1> Why crypto currency will matter a decade from now currency will matter a decade from now </h1>
+        <h1> {{$oneblog->Title}} </h1>
     </div>
 
     <div> 
 
-        <p> 
+        {{-- <p> 
             Defi which is short for Decentralized finance will be 
             alternative to traditional payment and solve solutions 
             beyond payments. Here’s why. 
+        </p> --}}
+
+        <p> 
+           {{$oneblog->Quoteone}}
         </p>
 
     <div class="writerdetailsflex">
@@ -44,7 +48,11 @@
 
 
     <div class="titleimg"> 
-        <img src="\images\defiandcefi.png"> 
+        {{-- <img src="\images\defiandcefi.png">  --}}
+        {{-- <img  src="{{asset($oneblog->picture)}}"> --}}
+        {{-- <img  src="{{$oneblog->picture}}" > --}}
+        <img  src="{{asset('storage/' . $oneblog->picture)}}">
+        {{-- <img href="{{ url('/storage//'.$oneblog->picture) }}"> --}}
     </div>
 
     </div>
@@ -79,9 +87,9 @@
         <div class="blogparagraph"> 
 
             <p> 
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                {{$oneblog->Contentone}}
 
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                {{$oneblog->Contentone}}
             </p> 
 
         </div>
@@ -92,7 +100,7 @@
 
         
         <div class="headingtwo">
-            <h1> Why crypto currency will matter a decade from now </h1>
+            <h1> {{$oneblog->Heading}} </h1>
         </div>
 
         <br/> 
@@ -103,6 +111,8 @@
             src="{{asset('storage/' . $oneblog->picture)}}"
             alt=""
         /> --}}
+
+        {{-- <h3>  {{$oneblog->Title}} </h3>  --}}
 
 {{-- <h3>  {{$oneblog->name}} </h3> 
 <h3>  {{$oneblog->content}} </h3>  --}}
