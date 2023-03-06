@@ -53,8 +53,8 @@ Route::post('/authenticate', [RegisterController::class, 'authenticate']);
 // create post interface
 Route::get('/createpost', [BlogsController::class, 'create']);
 
-// Route::get('/blogpost/{oneblog}', [BlogsController::class, 'showone']);
-Route::get('/blogpost/one', [BlogsController::class, 'showone']);
+Route::get('/blogpost/{oneblog}', [BlogsController::class, 'showone']);
+// Route::get('/blogpost/one', [BlogsController::class, 'showone']);
 
 Route::post('/publish', [BlogsController::class, 'store']);
 

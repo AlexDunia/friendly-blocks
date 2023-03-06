@@ -30,6 +30,7 @@ class RegisterController extends Controller
             'email'=>['required', 'email', Rule::unique('users', 'email')],
             'password' => 'required'
         ]);
+        
         $Myuser['password'] = bcrypt($Myuser['password']);
         $oneuser = User::create($Myuser);
         Auth()->login($oneuser);

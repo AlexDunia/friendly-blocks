@@ -20,7 +20,8 @@ return new class extends Migration
             $table->string('Quoteone');
             $table->string('Contentone');
             $table->string('Contenttwo');
-            $table->string('quotetwo');
+            $table->string('picture');
+            $table->string('Quotetwo');
             $table->timestamps();
         });
 

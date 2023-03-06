@@ -26,7 +26,7 @@
     
     
         <div class="userimgdiv">
-          <a href="/blogpost/{{$one->id}}"> {{$one->name}} </a>
+          <a href="/blogpost/{{$one->id}}"> {{$one->Title}} </a>
         </div>
     
        </div> 

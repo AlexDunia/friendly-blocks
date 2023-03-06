@@ -18,7 +18,7 @@
   
         <h2> Create post. </h2> 
 
-            <form method="post" class="fstyle" action="/publish">
+            <form method="POST" class="fstyle" action="/publish" enctype="multipart/form-data">
 
                 @csrf
         
@@ -103,19 +103,20 @@
                 </div>
 
 
-                {{-- <div class="mb-6">
+                <div>
                     <br/>
                     <br/>
                     <input
                         type="file"
-                        name="logo"
+                        name="picture"
                     />
+                    
             
-                    @error('logo')
+                    {{-- @error('picture')
                     <p class="text-red-500 text-xs mt-1"> {{$message}} </p>
-                    @enderror
+                    @enderror --}}
             
-                </div> --}}
+                </div>
 
 
                 <div class="forminnerquote">

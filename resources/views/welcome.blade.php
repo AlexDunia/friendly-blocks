@@ -61,6 +61,7 @@
   </div>
 
 </div> 
+
 {{-- Lets first try to show it here directly --}}
 
 @unless(count($welcome) == 0)

@@ -13,6 +13,7 @@ class blogs extends Model
         'Heading',
         'Quoteone',
         'Contentone',
+        'picture',
         'Contenttwo',
         'Quotetwo',
     ];

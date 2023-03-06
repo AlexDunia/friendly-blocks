@@ -111,3 +111,24 @@ li{
   .shh input::placeholder{
     color:#b4a1a4;
   }
+
+  .blogparagraph{
+    width:65%;
+    margin:auto;
+    align-items:center;
+  }
+
+  .blogparagraph p{
+    font-size:17px;
+    line-height:2.4em;
+    color:#727272;
+    font-weight:400px;
+
+  }
+
+  .headingtwo{
+    font-size:15px;
+    width:65%;
+    margin:auto;
+    align-items:center;
+  }

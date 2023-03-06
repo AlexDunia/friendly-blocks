@@ -30,6 +30,7 @@ class BlogsController extends Controller
 
     public function store(Request $request){
         // dd($request->all());
+        // dd($request->file('picture'));
         $Blogfields = $request->validate([
           'Title' => 'required',
           'Heading' => 'required',
@@ -38,6 +39,15 @@ class BlogsController extends Controller
           'Quotetwo' => 'required',
           'Contenttwo' => 'required',
         ]);
+
+        
+        if($request->hasFile('picture')){
+            $Blogfields['picture'] = $request->file('picture')->store('photos', 'public');
+        }
+
+        // if($request->hasFile('logo')) {
+        //     $Formfields['logo'] = $request->file('logo')->store('logos', 'public');
+        // }
 
         blogs::create($Blogfields);
         // We used this create while making use of the database seeders. 
