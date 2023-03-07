@@ -10,13 +10,21 @@ class blogs extends Model
     // use HasFactory;
     protected $fillable = [
         'Title',
-        'Heading',
-        'Quoteone',
-        'Contentone',
+        'Subtitle',
         'picture',
+        'Contentone',
+        'Heading',
         'Contenttwo',
-        'Quotetwo',
+        'Conclusion',
+        'Contentthree',
     ];
 
-    
+    public function scopeFilter($query, array $filters){
+        // Then we kick kick off with the condition.
+
+        if($filters['search'] ?? false){
+            $query->where('Title', 'like', '%' . $filters['search'] . '%');
+        }
+    }
+
 }

@@ -61,6 +61,33 @@ li{
     margin-left:20px;
 }
 
+.navdivauth ul a li{
+    display: inline;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    margin-right: 120px;
+    text-decoration: none;
+    color:white;
+}
+
+.navdivauth button{
+    background: #EDBC23;
+    border-radius: 8px;
+    align-items: center;
+    padding: 5px 20px;
+    /* gap: 10px; */
+    margin-left: 80px;
+    font-Weight: 700;
+    font-size: 16px;
+    Line-height: 32px;
+    Align-items: Center;
+    color: #081B28;
+    border: none;
+    margin-top: 25px;
+}
+
 .navdiv li a{
     text-decoration:none;
     color:white;
@@ -100,12 +127,13 @@ li{
 }
 
 .userimg {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 50%;
     margin-left: 40px;
+    margin-top: 20px;
 }
 
 .navdivregister{

@@ -45,63 +45,13 @@
                  
                     <textarea
                     type="text"
-                    name="Heading"
+                    name="Subtitle"
                     rows="10"
-                    placeholder="Heading"
+                    placeholder="Subtitle"
                 ></textarea>
                    
                 </div>
                 </div>
-
-                <div class="forminnerquote">
-
-                    <br/>
-                    <br/>
-                    <div >
-                 
-                    <textarea
-                    type="text"
-                    name="Quoteone"
-                    rows="10"
-                    placeholder="Quote: (Not compulsory)"
-                ></textarea>
-                   
-                </div>
-                </div>
-
-
-                <div class="forminnercontent">
-                    
-                    <br/>
-                    <br/>
-                    <div >
-                 
-                    <textarea
-                    type="text"
-                    name="Contentone"
-                    rows="10"
-                    placeholder="Content (Per paragraph):"
-                ></textarea>
-                   
-                </div>
-                </div>
-
-                <div class="forminnercontent">
-                    
-                    <br/>
-                    <br/>
-                    <div >
-                 
-                    <textarea
-                    type="text"
-                    name="Contenttwo"
-                    rows="10"
-                    placeholder="Content (Per paragraph):"
-                ></textarea>
-                   
-                </div>
-                </div>
-
 
                 <div>
                     <br/>
@@ -118,7 +68,6 @@
             
                 </div>
 
-
                 <div class="forminnerquote">
 
                     <br/>
@@ -127,14 +76,89 @@
                  
                     <textarea
                     type="text"
-                    name="Quotetwo"
+                    name="Contentone"
                     rows="10"
-                    placeholder="Quote: (Not compulsory)">
-                   </textarea>
+                    placeholder="Content one"
+                ></textarea>
                    
                 </div>
                 </div>
+
+
+                <div class="forminner">
+
+                    <br/>
+                    <br/>
+                    <div >
+                       
+                    <input
+                        type="text"
+                        name="Heading"
+                        placeholder="Sub heading"
+                        value="{{old('Heading')}}"
+                    />
+                   
+                </div>
+
+                <div class="forminnercontent">
+                    
+                    <br/>
+                    <br/>
+                    <div >
+                 
+                    <textarea
+                    type="text"
+                    name="Contenttwo"
+                    rows="10"
+                    placeholder="Content"
+                ></textarea>
+                   
+                </div>
+                </div>
+
+                <div class="forminner">
+
+                    <br/>
+                    <br/>
+                    <div >
+                       
+                    <input
+                        type="text"
+                        name="Conclusion"
+                        placeholder="Conclusion heading"
+                        value="{{old('Conclusion')}}"
+                    />
+                   
+                </div>
+
+
+                
+
+                <div class="forminnercontent">
+                    
+                    <br/>
+                    <br/>
+                    <div >
+                 
+                    <textarea
+                    type="text"
+                    name="Contentthree"
+                    rows="10"
+                    placeholder="Content"
+                ></textarea>
+                   
+                </div>
+                </div>
+
+
             
+                    {{-- @error('picture')
+                    <p class="text-red-500 text-xs mt-1"> {{$message}} </p>
+                    @enderror --}}
+            
+                </div>
+
+
 
 
                 {{-- <div class="forminner">

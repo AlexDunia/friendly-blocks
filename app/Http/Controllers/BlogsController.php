@@ -11,7 +11,7 @@ class BlogsController extends Controller
     // Show all blogs
     public function index(){
         return view('welcome', [
-            'welcome' => blogs::all()
+            'welcome' => blogs::latest()->filter(request(['search']))->get()
             // remember, no parameter if the crud operation is really all. 
         ]);
     }
@@ -33,13 +33,15 @@ class BlogsController extends Controller
         // dd($request->file('picture'));
         $Blogfields = $request->validate([
           'Title' => 'required',
-          'Heading' => 'required',
-          'Quoteone' => 'required',
+          'Subtitle' => 'required',
+          'picture' => 'required',
           'Contentone' => 'required',
-          'Quotetwo' => 'required',
+          'Heading' => 'required',
           'Contenttwo' => 'required',
+          'Conclusion' => 'required',
+          'Contentthree' => 'required',
         ]);
-
+        
         
         if($request->hasFile('picture')){
             $Blogfields['picture'] = $request->file('picture')->store('photos', 'public');

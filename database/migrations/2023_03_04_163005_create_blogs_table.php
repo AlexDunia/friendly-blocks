@@ -15,13 +15,14 @@ return new class extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
-            $table->string('Title');
-            $table->string('Heading');
-            $table->string('Quoteone');
-            $table->string('Contentone');
-            $table->string('Contenttwo');
+            $table->longText('Title');
+            $table->longText('Subtitle');
             $table->string('picture');
-            $table->string('Quotetwo');
+            $table->longText('Contentone');
+            $table->longText('Heading');
+            $table->longText('Contenttwo');
+            $table->longText('Conclusion');
+            $table->longText('Contentthree');
             $table->timestamps();
         });
 

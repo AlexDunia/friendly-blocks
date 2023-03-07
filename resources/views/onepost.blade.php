@@ -29,7 +29,7 @@
         </p> --}}
 
         <p> 
-           {{$oneblog->Quoteone}}
+           {{$oneblog->Subtitle}}
         </p>
 
     <div class="writerdetailsflex">
@@ -89,7 +89,6 @@
             <p> 
                 {{$oneblog->Contentone}}
 
-                {{$oneblog->Contentone}}
             </p> 
 
         </div>
@@ -105,6 +104,37 @@
 
         <br/> 
         <br/>
+
+        <div class="blogparagraph"> 
+
+            <p> 
+                {{$oneblog->Contenttwo}}
+
+            </p> 
+
+        </div>
+
+
+        <br/> 
+        <br/>
+
+        
+        <div class="headingtwo">
+            <h1> {{$oneblog->Conclusion}} </h1>
+        </div>
+
+        <br/> 
+        <br/>
+
+        <div class="blogparagraph"> 
+
+            <p> 
+                {{$oneblog->Contentthree}}
+
+            </p> 
+
+        </div>
+
 
         {{-- <img
             class="w-48 mr-6 mb-6"

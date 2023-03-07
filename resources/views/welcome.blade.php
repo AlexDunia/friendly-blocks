@@ -44,14 +44,14 @@
 
 <div class="shh">
 
-  <form> 
+  <form action="/"> 
 
     <button type="submit"> <i class="fa fa-search" aria-hidden="true"> </i> </button>
 
     <input
           type="text"
           class="no-outline"
-          name="company"
+          name="search"
           placeholder="Search for blogs, writers, etc"
       />
 
