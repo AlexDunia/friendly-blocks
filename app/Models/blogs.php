@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class blogs extends Model
 {
@@ -14,6 +15,7 @@ class blogs extends Model
         'picture',
         'Contentone',
         'Heading',
+        'user_id',
         'Contenttwo',
         'Conclusion',
         'Contentthree',
@@ -21,10 +23,14 @@ class blogs extends Model
 
     public function scopeFilter($query, array $filters){
         // Then we kick kick off with the condition.
-
         if($filters['search'] ?? false){
             $query->where('Title', 'like', '%' . $filters['search'] . '%');
         }
     }
+
+  //  This blog belongs to this user.  
+  public function user(){
+    return $this->belongsTo(User::class, 'user_id');
+  } 
 
 }

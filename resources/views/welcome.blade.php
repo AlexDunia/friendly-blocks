@@ -55,8 +55,7 @@
           placeholder="Search for blogs, writers, etc"
       />
 
-
-  </form>
+    </form>
 
   </div>
 

@@ -29,9 +29,13 @@ class RegisterController extends Controller
             'lastname' => 'required',
             'email'=>['required', 'email', Rule::unique('users', 'email')],
             'password' => 'required'
+            
         ]);
         
+        // $user = User::where('user_id', $Myuser)->first();
+        
         $Myuser['password'] = bcrypt($Myuser['password']);
+        // $Myuser['user_id'] = Auth()->id();
         $oneuser = User::create($Myuser);
         Auth()->login($oneuser);
      

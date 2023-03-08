@@ -15,8 +15,9 @@
 
 
       <div class="allproducts">
+        <img  src="{{asset('storage/' . $one->picture)}}" class="blogimage" width="10px">
 
-        <img src="\images\pkey.png" class="blogimage" width="300px"/>
+        {{-- <img src="\images\pkey.png" class="blogimage" width="300px"/> --}}
     
         <div class="userflex"> 
     
@@ -30,6 +31,8 @@
         </div>
     
        </div> 
+
+       <a href="/blogpost/{{$one->id}}/edit"> Edit post</a>
     
     
         {{-- <h3> {{$one->content}} </h3>  --}}
