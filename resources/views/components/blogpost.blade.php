@@ -13,7 +13,6 @@
 <body>
     {{-- blogs grid --}}
 
-
       <div class="allproducts">
         <img  src="{{asset('storage/' . $one->picture)}}" class="blogimage" width="10px">
     
@@ -31,8 +30,7 @@
     
        </div> 
 
-       <h3> {{$one->Title}} </h3>
-
+       <h3> <a href="/blogpost/{{$one->id}}"> {{$one->Title}} </a> </h3>
        {{-- <a href="/blogpost/{{$one->id}}/edit"> Edit post</a> --}}
     
 

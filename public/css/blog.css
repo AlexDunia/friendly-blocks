@@ -137,21 +137,30 @@ li{
     width:70%;
     align-items: center;
     /* margin: auto; */
+    margin-top:20px;
     display: flex;
 }
 
 .allproducts h3{
-   padding-top:14px;
-   padding-bottom:32px;
+padding-top:8px;
+padding-bottom:30px;
 font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 176%;
+font-weight: 700;
 padding-right:30px;
 padding-left:30px;
-/* or 46px */
-
 }
+
+.allproducts h3 a{
+   font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color:#0B0A0A;
+  }
+
+  .allproducts h3 a:hover{
+    border-bottom:2px solid #0B0A0A;
+   }
 
   /* .myimg img {
     position: absolute;
