@@ -28,7 +28,7 @@
       
   </form> --}}
 
-    <h1> Welcome, <span class="purplespan"> {{auth()->User()->firstname}} </span> </h1> 
+    <h1> Welcome, <span class="purplespan"> {{ auth()->user()->firstname }} </span> </h1> 
     <p> We have updated our blog, scroll down to be  <br/>
       up to date.  </p>
 

@@ -125,13 +125,18 @@ li{
    font-weight:400;
 }
 
+.userimgdiv a{
+  font-size:14px;
+  margin-left:20px;
+}
+
 
 .userflex{
     text-align: center;
-    justify-content: space-around;
-    width: 35%;
+    /* justify-content: space-around; */
+    width:70%;
     align-items: center;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
 }
 
@@ -146,7 +151,6 @@ padding-right:30px;
 padding-left:30px;
 /* or 46px */
 
-text-align: center;
 }
 
   /* .myimg img {

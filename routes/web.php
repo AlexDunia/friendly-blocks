@@ -34,7 +34,7 @@ Route::get('/', [BlogsController::class, 'index']);
 // });
 
 // The next code is to send a post request to log out. 
-Route::post('/logout', [RegisterController::class, 'logout'])->middleware('auth');
+Route::post('/logout', [RegisterController::class, 'logout']);
 
 Route::get('/myblogs', [BlogsController::class, 'manage']);
 
@@ -46,7 +46,7 @@ Route::get('/user/register', [RegisterController::class, 'create'])->name('login
 Route::post('/user', [RegisterController::class, 'store']);
 
 // User profile 
-Route::get('/profile', [RegisterController::class, 'profile']);
+Route::get('/profile/{username}', [RegisterController::class, 'profile'])->middleware('guest');
 
 // Enabe user login. 
 Route::get('/user/login', [RegisterController::class, 'login'])->middleware('guest');

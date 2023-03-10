@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
@@ -14,9 +15,16 @@ class RegisterController extends Controller
     //     return view('welcome');
     // }
 
-    public function profile(){
+    public function profile($username){
+        $username = User::where('firstname' , 'lastname')->get();
         return view('profile');
     }
+
+    // public function profile($id)
+    // {
+    //     $user = User::find($id);
+    //     return view('user.profile', compact('user') );
+    // }
 
     public function create(){
         return view('register');
