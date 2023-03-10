@@ -203,22 +203,26 @@
 
                 <br/> 
                 <br/>
-
-                <div class="forminner">
-                    <button
-                        type="submit"
-                    >   
-                <form method="POST" action="/blogpost/{{$oneblog->id}}" enctype="multipart/form-data">
-                    @csrf
-                    @method('DELETE')
-                        Delete
-                </form>
-            </button>
-        </div>
                 
             </form>
     </div>
+
+          
+
+        <div class="forminner">
+            <button
+                type="submit"
+            >   
+        <form method="POST" action="/blogpost/{{$oneblog->id}}" enctype="multipart/form-data">
+            @csrf
+            @method('DELETE')
+                Delete
+        </form>
+    </button>
 </div>
+
+</div>
+
 
 </body>
 

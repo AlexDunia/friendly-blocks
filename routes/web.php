@@ -46,7 +46,7 @@ Route::get('/user/register', [RegisterController::class, 'create'])->name('login
 Route::post('/user', [RegisterController::class, 'store']);
 
 // User profile 
-Route::get('/profile/{username}', [RegisterController::class, 'profile'])->middleware('guest');
+Route::get('/profile/{username}', [RegisterController::class, 'profile']);
 
 // Enabe user login. 
 Route::get('/user/login', [RegisterController::class, 'login'])->middleware('guest');
@@ -63,9 +63,9 @@ Route::post('/publish', [BlogsController::class, 'store'])->middleware('auth');
 
 Route::put('/blogpost/{oneblog}', [BlogsController::class, 'update'])->middleware('auth');
 
-Route::delete('/blogpost/{oneblog}', [BlogsController::class, 'destroy'])->middleware('auth');
-
 Route::get('/blogpost/{oneblog}/edit', [BlogsController::class, 'edit'])->middleware('auth'); 
+
+Route::delete('/blogpost/{oneblog}', [BlogsController::class, 'destroy'])->middleware('auth');
 
 
 Route::get('/', [App\Http\Controllers\BlogsController::class, 'index'])->name('welcome');

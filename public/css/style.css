@@ -15,14 +15,13 @@ li{
     list-style: none;
 }
 
-.pgrid{
+/* .pgrid{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit,minmax(370px,3fr));
-    /* text-align: center; */
     padding: 4em;
     margin-bottom: 40px;
-  }
+  } */
 
 
 .navcolor{

@@ -11,8 +11,10 @@
 <body>
     {{-- blogs grid --}}
 
+    <div class="pw"> 
     <div class="pgrid">
         {{$slot}}
-    </div>       
+    </div>  
+    </div>     
 
 </body>

@@ -101,6 +101,10 @@ class BlogsController extends Controller
     public function update(Request $request, blogs $oneblog){
         // dd($oneblog);
         // dd($request->file('picture'));
+        if(auth()->id() != $oneblog->user_id){
+            abort(403, "Cannot process request");
+        }
+        
         $Blogfields = $request->validate([
           'Title' => 'required',
           'Subtitle' => 'required',
@@ -110,7 +114,6 @@ class BlogsController extends Controller
           'Conclusion' => 'required',
           'Contentthree' => 'required',
         ]);
-        
         
         if($request->hasFile('picture')){
             $Blogfields['picture'] = $request->file('picture')->store('photos', 'public');
