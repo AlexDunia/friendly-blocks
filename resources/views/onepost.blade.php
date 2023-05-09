@@ -12,23 +12,23 @@
 </head>
 <body>
 
-    <div class="titleflex"> 
+    <div class="titleflex">
 
-    <div class="titlediv"> 
+    <div class="titlediv">
 
-    <div> 
+    <div>
         <h1> {{$oneblog->Title}} </h1>
     </div>
 
-    <div> 
+    <div>
 
-        {{-- <p> 
-            Defi which is short for Decentralized finance will be 
-            alternative to traditional payment and solve solutions 
-            beyond payments. Here’s why. 
+        {{-- <p>
+            Defi which is short for Decentralized finance will be
+            alternative to traditional payment and solve solutions
+            beyond payments. Here’s why.
         </p> --}}
 
-        <p> 
+        <p>
            {{$oneblog->Subtitle}}
         </p>
 
@@ -36,10 +36,10 @@
 
         <img src="\images\dunia.png" class="writerimg">
 
-        <div> 
-            <h4> Alex Dunia </h4> 
-            <h4>    March 10th, 2023  </h4> 
-        </div> 
+        <div>
+            <h4> Alex Dunia </h4>
+            <h4>    March 10th, 2023  </h4>
+        </div>
 
         @auth
    <h4> <a href=""> Edit post</a> </h4>
@@ -53,7 +53,7 @@
    </div>
 
 
-    <div class="titleimg"> 
+    <div class="titleimgg">
         {{-- <img src="\images\defiandcefi.png">  --}}
         {{-- <img  src="{{asset($oneblog->picture)}}"> --}}
         {{-- <img  src="{{$oneblog->picture}}" > --}}
@@ -63,81 +63,81 @@
 
     </div>
 
-    <br/> 
+    <br/>
     <br/>
 
     <div class="formflex">
 
         <div class="shh">
-        
-          <form> 
-        
+
+          <form>
+
             <button type="submit"> <i class="fa fa-search" aria-hidden="true"> </i> </button>
-        
+
             <input
                   type="text"
                   class="no-outline"
                   name="company"
                   placeholder="Search for blogs, writers, etc"
               />
-        
-          </form>
-        
-          </div>
-        
-        </div> 
 
-        <br/> 
+          </form>
+
+          </div>
+
+        </div>
+
+        <br/>
         <br/>
 
-        <div class="blogparagraph"> 
+        <div class="blogparagraph">
 
-            <p> 
+            <p>
                 {{$oneblog->Contentone}}
 
-            </p> 
+            </p>
 
         </div>
 
 
-        <br/> 
+        <br/>
         <br/>
 
-        
+
         <div class="headingtwo">
             <h1> {{$oneblog->Heading}} </h1>
         </div>
 
-        <br/> 
+        <br/>
         <br/>
 
-        <div class="blogparagraph"> 
+        <div class="blogparagraph">
 
-            <p> 
+            <p>
                 {{$oneblog->Contenttwo}}
 
-            </p> 
+            </p>
 
         </div>
 
 
-        <br/> 
+        <br/>
         <br/>
 
-        
+
         <div class="headingtwo">
             <h1> {{$oneblog->Conclusion}} </h1>
         </div>
 
-        <br/> 
+        <br/>
         <br/>
 
-        <div class="blogparagraph"> 
+        <div class="blogparagraph">
 
-            <p> 
+            <p>
                 {{$oneblog->Contentthree}}
 
-            </p> 
+            </p>
 
         </div>
 
@@ -150,7 +150,7 @@
 
         {{-- <h3>  {{$oneblog->Title}} </h3>  --}}
 
-{{-- <h3>  {{$oneblog->name}} </h3> 
+{{-- <h3>  {{$oneblog->name}} </h3>
 <h3>  {{$oneblog->content}} </h3>  --}}
 
 </body>
