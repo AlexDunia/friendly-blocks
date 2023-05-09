@@ -1,5 +1,6 @@
 @extends('layout')
 @section('mycontent')
+@endsection
 
 <head>
 
@@ -12,14 +13,16 @@
 </head>
 <body>
 
-<div class="formbgmain"> 
+<div class="formbgmain">
 
-    <div class="formbg"> 
+    <div class="formbg">
 
-        <h2> Sign up </h2> 
+        <h2> Sign up </h2>
 
         <p> Are you passionate about blockchain technology or want to know more about it in the simplest way there is on the world wide web?
             if yes, then you should sign in </p>
+
+
 
             {{-- <form method="POST" action="/users/authenticate" class="fstyle"> --}}
                 <form method="POST" class="fstyle" action="/user">
@@ -30,7 +33,7 @@
 
                     <br/>
                     <br/>
-                    <label for="firstname" 
+                    <label for="firstname"
                         > First Name </label
                     >
 
@@ -41,8 +44,8 @@
                         name="firstname"
                         value="{{old('firstname')}}"
                     />
-                   
-                   
+
+
                 </div>
 
                 <div class="forminner">
@@ -60,7 +63,7 @@
                         name="lastname"
                         value="{{old('lastname')}}"
                     />
-                   
+
                 </div>
 
 
@@ -79,7 +82,7 @@
                         name="email"
                         value="{{old('email')}}"
                     />
-                   
+
                 </div>
 
 
@@ -98,7 +101,7 @@
                         name="password"
                         value="{{old('password')}}"
                     />
-                   
+
                 </div>
 
 
@@ -117,7 +120,7 @@
                         name="password"
                         value="{{old('password')}}"
                     />
-                   
+
                 </div> --}}
 
                 <br/>
@@ -133,17 +136,16 @@
                 </div>
 
                 {{-- <div class="mt-8">
-                    
+
                         <a href="/register" class="text-laravel"
                             > SCreate an account </a
                         >
-                
+
                 </div> --}}
-                
+
             </form>
     </div>
 </div>
 
 </body>
 
-@endsection

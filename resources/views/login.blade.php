@@ -1,5 +1,6 @@
 @extends('layout')
 @section('mycontent')
+<x-card> </x-card>
 
 <head>
 
@@ -18,27 +19,27 @@
 </head>
 <body>
 
-<div class="formbgmain"> 
+<div class="formbgmain">
 
-    <div class="formbg"> 
+    <div class="formbg">
         @foreach($errors->all() as $error)
    {{ $error  }}
-@endforeach
+    @endforeach
 
-        <h2> Login </h2> 
+        <h2> Login </h2>
 
         <p> Log in to stay updated with our articles </p>
 
             <form method="post" class="fstyle" action="/authenticate">
 
                 @csrf
-        
+
                 <div class="forminner">
 
                     <br/>
                     <br/>
                     <div >
-                        <label for="email" 
+                        <label for="email"
                             > Email </label
                         >
                     <input
@@ -47,7 +48,7 @@
                         placeholder="email"
                         value="{{old('email')}}"
                     />
-                   
+
                 </div>
 
 
@@ -56,7 +57,7 @@
                     <br/>
                     <br/>
                     <div >
-                        <label for="password" 
+                        <label for="password"
                             > password </label
                         >
                     <input
@@ -65,7 +66,7 @@
                         placeholder="password"
                         value="{{old('password')}}"
                     />
-                   
+
                 </div>
 
 
@@ -83,13 +84,13 @@
                 </div>
 
                 {{-- <div class="mt-8">
-                    
+
                         <a href="/register" class="text-laravel"
                             > SCreate an account </a
                         >
-                
+
                 </div> --}}
-                
+
             </form>
     </div>
 </div>
