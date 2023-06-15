@@ -40,6 +40,12 @@
             <h4> Alex Dunia </h4> 
             <h4>    March 10th, 2023  </h4> 
         </div> 
+
+        @auth
+   <h4> <a href=""> Edit post</a> </h4>
+    @else
+    <h4> <a href=""> Read More </a> </h4>
+    @endauth
     </div>
 
     </div>

@@ -25,6 +25,7 @@ class BlogsController extends Controller
         ]);
     }
 
+    
    
      // Show all blogs
      public function create(){
@@ -76,11 +77,11 @@ class BlogsController extends Controller
 
     // I want to make sure that whatever listing I have belong to my user.
     // First step is to create a function that actually takes my manage functionality. 
-    public function manage(){
-        return view('manage', [
-            'allmyblogs' => auth()->user()->blog()->get()
-        ]);
-    }
+    // public function manage(){
+    //     return view('manage', [
+    //         'allmyblogs' => auth()->user()->blog()->get()
+    //     ]);
+    // }
 
     public function edit(blogs $oneblog){
         return view('edit', [
@@ -122,5 +123,18 @@ class BlogsController extends Controller
         $oneblog->update($Blogfields);
         return redirect('/');
     }
+
+    // public function profile(){
+   
+    //     return view('profile', 
+    //     ['allmyb' => auth()->user()->blog()->get()]);
+    // }
+
+    public function profile(){
+   
+        return view('profile', 
+        ['allmyb' => auth()->user()->blog()->get()]);
+    }
+    
 
 }

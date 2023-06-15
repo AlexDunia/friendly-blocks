@@ -248,6 +248,7 @@ overflow: hidden;
    .pgrid {
     grid-template-columns: repeat(2, 1fr);
 }
+
 }
 
 
@@ -258,11 +259,7 @@ overflow: hidden;
    font-size: 20px;
    line-height: 10%;
    color:#0B0A0A;
-   /* display: flex;
-     flex-direction: column;
-     box-sizing: border-box;
-     padding-right: 2.5vw;
-   overflow: hidden; */
+  
    }
 
    .allproducts h3{

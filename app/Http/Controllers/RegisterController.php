@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use auth;
 use App\Models\User;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
@@ -14,11 +15,15 @@ class RegisterController extends Controller
     // public function index(){
     //     return view('welcome');
     // }
+  
 
-    public function profile($username){
-        $username = User::where('firstname' , 'lastname')->get();
-        return view('profile');
-    }
+
+    // public function profile($username){
+    //     $username = User::where('firstname' , 'lastname')->get();
+    //     return view('profile', [
+    //         'allmyblogs' => auth()->user()->blog()->get()
+    //     ]);
+    // }
 
     // public function profile($id)
     // {
@@ -96,5 +101,15 @@ public function authenticate(Request $request){
      return back();
     
 }
+
+// public function profile(){
+   
+//     $userpost = User::with('blog')->get();
+//     // $user = User::with('blog')->find($user_id);
+//     // $allmyblogs = $user->posts;
+
+//     return view('profile');
+// }
+
 
 }

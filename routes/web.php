@@ -46,10 +46,13 @@ Route::get('/user/register', [RegisterController::class, 'create'])->name('login
 Route::post('/user', [RegisterController::class, 'store']);
 
 // User profile 
-Route::get('/profile/{username}', [RegisterController::class, 'profile']);
+Route::get('/profile', [BlogsController::class, 'profile']);
+
+// Route::get('/manage', [RegisterController::class, 'manage']);
 
 // Enabe user login. 
 Route::get('/user/login', [RegisterController::class, 'login'])->middleware('guest');
+
 // Verify and store users login
 Route::post('/authenticate', [RegisterController::class, 'authenticate']);
 
